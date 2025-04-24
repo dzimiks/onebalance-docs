@@ -1,102 +1,90 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "maple",
+  "name": "OneBalance Docs",
+  "description": "One Click, One Integration, One Balance, All Chains.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FFAB40",
+    "light": "#FFAB40",
+    "dark": "#FFAB40"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Guides",
+        "dropdown": "Documentation",
+        "icon": "book-open",
+        "pages": [
+          "introduction"
+        ]
+      },
+      {
+        "dropdown": "API Reference",
+        "icon": "square-terminal",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Pet",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "api-reference/endpoints/pet/update-an-existing-pet",
+              "api-reference/endpoints/pet/add-a-new-pet-to-the-store",
+              "api-reference/endpoints/pet/finds-pets-by-status",
+              "api-reference/endpoints/pet/finds-pets-by-tags",
+              "api-reference/endpoints/pet/find-pet-by-id",
+              "api-reference/endpoints/pet/updates-a-pet-in-the-store-with-form-data",
+              "api-reference/endpoints/pet/deletes-a-pet",
+              "api-reference/endpoints/pet/uploads-an-image"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Store",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "api-reference/endpoints/store/returns-pet-inventories-by-status",
+              "api-reference/endpoints/store/place-an-order-for-a-pet",
+              "api-reference/endpoints/store/find-purchase-order-by-id",
+              "api-reference/endpoints/store/delete-purchase-order-by-id"
+            ]
+          },
+          {
+            "group": "User",
+            "pages": [
+              "api-reference/endpoints/user/create-user",
+              "api-reference/endpoints/user/creates-list-of-users-with-given-input-array",
+              "api-reference/endpoints/user/creates-list-of-users-with-given-input-array-1",
+              "api-reference/endpoints/user/logs-user-into-the-system",
+              "api-reference/endpoints/user/logs-out-current-logged-in-user-session",
+              "api-reference/endpoints/user/get-user-by-user-name",
+              "api-reference/endpoints/user/updated-user",
+              "api-reference/endpoints/user/delete-user"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
+        "dropdown": "Blog",
+        "icon": "rss",
+        "href": "https://www.onebalance.io/blog"
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "icons": {
+    "library": "lucide"
+  },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.onebalance.io"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/OneBalance_io",
+      "github": "https://github.com/onebalance-io",
+      "linkedin": "https://linkedin.com/company/onebalance-io"
     }
   }
 }

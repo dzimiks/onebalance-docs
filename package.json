@@ -4,7 +4,7 @@
   "description": "Official OneBalance Docs",
   "main": "index.js",
   "scripts": {
-    "openapi": "npx @mintlify/scraping@latest openapi-file api-reference/openapi.json -o api-reference/endpoints",
+    "openapi": "npx @mintlify/scraping@latest openapi-file api-reference/openapi.json -o api-reference",
     "broken-links": "npx mintlify broken-links"
   },
   "repository": {

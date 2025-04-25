@@ -23,38 +23,9 @@
         "icon": "square-terminal",
         "groups": [
           {
-            "group": "Pet",
+            "group": "Account",
             "pages": [
-              "api-reference/endpoints/pet/update-an-existing-pet",
-              "api-reference/endpoints/pet/add-a-new-pet-to-the-store",
-              "api-reference/endpoints/pet/finds-pets-by-status",
-              "api-reference/endpoints/pet/finds-pets-by-tags",
-              "api-reference/endpoints/pet/find-pet-by-id",
-              "api-reference/endpoints/pet/updates-a-pet-in-the-store-with-form-data",
-              "api-reference/endpoints/pet/deletes-a-pet",
-              "api-reference/endpoints/pet/uploads-an-image"
-            ]
-          },
-          {
-            "group": "Store",
-            "pages": [
-              "api-reference/endpoints/store/returns-pet-inventories-by-status",
-              "api-reference/endpoints/store/place-an-order-for-a-pet",
-              "api-reference/endpoints/store/find-purchase-order-by-id",
-              "api-reference/endpoints/store/delete-purchase-order-by-id"
-            ]
-          },
-          {
-            "group": "User",
-            "pages": [
-              "api-reference/endpoints/user/create-user",
-              "api-reference/endpoints/user/creates-list-of-users-with-given-input-array",
-              "api-reference/endpoints/user/creates-list-of-users-with-given-input-array-1",
-              "api-reference/endpoints/user/logs-user-into-the-system",
-              "api-reference/endpoints/user/logs-out-current-logged-in-user-session",
-              "api-reference/endpoints/user/get-user-by-user-name",
-              "api-reference/endpoints/user/updated-user",
-              "api-reference/endpoints/user/delete-user"
+              "api-reference/account/predict-address"
             ]
           }
         ]

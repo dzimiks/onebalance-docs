@@ -31,6 +31,12 @@
         "icon": "square-terminal",
         "groups": [
           {
+            "group": "API Reference",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
             "group": "Account",
             "pages": [
               "api-reference/account/predict-address"
@@ -43,6 +49,19 @@
         "description": "Updates and case studies",
         "icon": "rss",
         "href": "https://www.onebalance.io/blog"
+      },
+      {
+        "dropdown": "Changelog",
+        "icon": "history",
+        "description": "Updates and changes",
+        "groups": [
+          {
+            "group": "Changelog",
+            "pages": [
+              "changelog"
+            ]
+          }
+        ]
       }
     ]
   },

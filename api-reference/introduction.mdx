@@ -1,33 +1,38 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: 'OneBalance Chain Abstraction Toolkit'
+description: 'Welcome to the OneBalance API - your comprehensive toolkit for end-to-end chain abstraction experiences'
+icon: 'book-open'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## Features
 
-## Welcome
+Our API provides powerful capabilities to streamline your blockchain operations:
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
-
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+- **Smart Account Management**: Predict addresses and enable auto-deployment
+- **Cross-Chain Balances**: View aggregated balances including resource locks
+- **Multi-Chain Transactions**: Execute transfers and swaps using aggregated balances
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+All API requests require authentication using an API key passed in the `x-api-key` header:
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+```bash Send your first request
+curl -X 'GET' \
+  'https://be.onebalance.io/api/assets/list' \
+  -H 'x-api-key: ${ONEBALANCE_API_KEY}'
 ```
+
+<Note>
+  A public API key is available for testing purposes with limited usage:
+  `42bb629272001ee1163ca0dbbbc07bcbb0ef57a57baf16c4b1d4672db4562c11`
+</Note>
+
+## Quick Start
+
+Try our reference application at [app.onebalance.io](https://app.onebalance.io) to see the API in action or jump straight into our [API Reference](/api-reference/account/predict-address) to start building.
+
+## Resources
+
+- [Full Documentation](https://docs.onebalance.io)
+- [Follow us on X](https://x.com/OneBalance_io)
+- [Visit our Website](https://onebalance.io)

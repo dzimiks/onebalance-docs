@@ -13,13 +13,21 @@
     "dropdowns": [
       {
         "dropdown": "Documentation",
-        "icon": "book-open",
-        "pages": [
-          "introduction"
+        "description": "Get started",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "index",
+              "quickstart"
+            ]
+          }
         ]
       },
       {
         "dropdown": "API Reference",
+        "description": "Explore our APIs",
         "icon": "square-terminal",
         "groups": [
           {
@@ -32,6 +40,7 @@
       },
       {
         "dropdown": "Blog",
+        "description": "Updates and case studies",
         "icon": "rss",
         "href": "https://www.onebalance.io/blog"
       }

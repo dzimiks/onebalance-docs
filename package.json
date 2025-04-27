@@ -1,8 +1,9 @@
 {
-  "name": "onebalance-docs",
+  "name": "@onebalance/docs",
   "version": "1.0.0",
   "description": "Official OneBalance Docs",
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "npx mintlify dev",
     "openapi": "npx @mintlify/scraping@latest openapi-file api-reference/openapi.json -o api-reference",
@@ -13,20 +14,6 @@
     "pre-commit": "pnpm lint-staged",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,mdx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.json": [
-      "prettier --write"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OneBalance-io/onebalance-docs.git"
-  },
-  "private": true,
   "devDependencies": {
     "@eslint/js": "^9.25.1",
     "@mdx-js/mdx": "^3.1.0",
@@ -41,5 +28,18 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
     "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OneBalance-io/onebalance-docs.git"
   }
 }

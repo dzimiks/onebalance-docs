@@ -1,0 +1,39 @@
+name: Docs Version Bump
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  bump-docs-version:
+    name: Bump Docs Version
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20]
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          run_install: false
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
+      - name: Automated Version Bump
+        uses: phips28/gh-action-bump-version@master
+        with:
+          tag-prefix: '@onebalance/docs@'
+          minor-wording: '[minor_release]'
+          major-wording: '[major_release]'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

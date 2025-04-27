@@ -18,10 +18,7 @@
         "groups": [
           {
             "group": "Getting Started",
-            "pages": [
-              "index",
-              "quickstart"
-            ]
+            "pages": ["index", "quickstart"]
           }
         ]
       },
@@ -32,15 +29,11 @@
         "groups": [
           {
             "group": "API Reference",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Account",
-            "pages": [
-              "api-reference/account/predict-address"
-            ]
+            "pages": ["api-reference/account/predict-address"]
           }
         ]
       },
@@ -57,9 +50,7 @@
         "groups": [
           {
             "group": "Changelog",
-            "pages": [
-              "changelog"
-            ]
+            "pages": ["changelog"]
           }
         ]
       }

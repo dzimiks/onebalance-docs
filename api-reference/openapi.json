@@ -54,9 +54,7 @@
   "paths": {
     "/account/predict-address": {
       "post": {
-        "tags": [
-          "Account"
-        ],
+        "tags": ["Account"],
         "operationId": "predictAddress",
         "summary": "Predict address for an account",
         "description": "Predict the address for an account based on the provided signers.",
@@ -121,10 +119,7 @@
             "example": "0xc162a3cE45ad151eeCd0a5532D6E489D034aB3B8"
           }
         },
-        "required": [
-          "sessionAddress",
-          "adminAddress"
-        ]
+        "required": ["sessionAddress", "adminAddress"]
       },
       "PredictAddressResponseSwaggerDto": {
         "type": "object",
@@ -135,23 +130,14 @@
             "example": "0x73578CE16263F0B8b49Dac9C1228b410791F68Be"
           }
         },
-        "required": [
-          "predictedAddress"
-        ]
+        "required": ["predictedAddress"]
       }
     }
   },
   "x-tagGroups": [
     {
       "name": "Toolkit",
-      "tags": [
-        "Account",
-        "Assets",
-        "Balances",
-        "Chains",
-        "Status",
-        "Quotes"
-      ]
+      "tags": ["Account", "Assets", "Balances", "Chains", "Status", "Quotes"]
     }
   ]
 }
